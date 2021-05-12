@@ -1,0 +1,20 @@
+body{
+backround-color:white;
+}
+i{
+font-size: 2rem;
+margin: 1rem;
+color:#2F2F2F;
+}
+div{
+justify-content: center;
+text-align: center !important;
+line-height: 1.5625rem;
+}
+#img{
+
+overflow: hidden;
+}
+img{
+border-radius: 0.5rem;
+}

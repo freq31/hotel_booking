@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marina Hotel</title>
+    <link rel="stylesheet" href="{% static 'hotel/css/booking_form.css' %}"/>
+  </head>
+  <body>
+      <main>
+        <div class="nav">
+          <h3 id="logo">Marina</h3>
+
+          <nav>
+            <a  href="{% url 'hotel:about_us' %}">ABOUT</a>
+            <a  href="{% url 'hotel:contact_us' %}">CONTACT</a>
+            <a  href="{% url 'hotel:gallery' %}">GALLERY</a>
+            <a  href="{% url 'hotel:RoomListView' %}">BOOK NOW</a>
+            <a  href="{% url 'hotel:BookingListView' %}">MY BOOKINGS</a>
+          </nav>
+        </div>
+
+        <div class="check_availability">
+          <div class="heading">
+            <h1 style="font-size:3.5rem;">Marina Hotel</h1>
+          </div>
+        </div>
+      </main>
+  </body>
+</html>

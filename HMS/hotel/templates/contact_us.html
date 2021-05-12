@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+    <title>CONTACT US</title>
+    <link rel="stylesheet" href="{% static 'hotel/css/contact_us.css' %}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+</head>
+<body style="background-image:linear-gradient(blue,purple);background-repeat:no-repeat;" >
+
+    <a href="{% url 'hotel:BookingFormView' %}"><i class="fas fa-arrow-alt-circle-left" >Home</i></a>
+
+    <h1><i class="far fa-address-card"></i>CONTACT US@</h1>
+    <h3>In case of any queries or reservation requests please reach out to our Guest Contact Centre</h3>
+    <h3>Toll-free number (Valid for guest calling from within India)</h3>
+    <h3>1-800-419-6444 ; 1-800-102-2333</h3>
+    <h3>Direct number (Valid for guest calling from outside India)</h3>
+    <h3>+91124 4816900; +91124 6718000</h3>
+    <a href="mailto:reservations@marinahotels.in" target="_blank">
+        <i class="far fa-envelope"></i>
+    </a>
+    <span>reservations@marinahotels.in</span>
+
+
+</body>
+</html>

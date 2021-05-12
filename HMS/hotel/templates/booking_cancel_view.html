@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Detail</title>
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="{% static 'hotel/css/room_detail_view.css' %}">
+
+</head>
+
+<body>
+
+
+    <div class="content">
+        <div class="image">
+            <img src="https://images.unsplash.com/photo-1519710164239-da123dc03ef4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60">
+        </div>
+
+
+        <div class="room">
+            <div class="home">
+                <a href="{% url 'hotel:RoomListView' %}"><i class="fas fa-arrow-alt-circle-left">Home</i></a>
+            </div>
+            <div class="room-info">
+                <h1>{{room_category}}</h1>
+                <h3>DETAILS:</h3>
+                <h3>ROOM NUMBER:{{booking.room.number}} , CATEGORY:{{booking.get_room_category}} </h3>
+                <h3>{{booking}}</h3>
+
+            </div>
+
+
+            <form id="booking-form" action="" method="POST">
+
+                {% csrf_token %}
+                <h2>Are you sure you wanna cancel this Booking? </h2>
+                <div class="input-div">
+                    <button type="submit">Cancel the Booking</button>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>

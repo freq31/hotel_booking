@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
+    <title>ABOUT US</title>
+    <link rel="stylesheet" href="{% static 'hotel/css/about_us.css' %}">
+    	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+
+
+</head>
+<body style="background-image:linear-gradient(yellow,green);background-repeat:no-repeat;">
+    <a href="{% url 'hotel:BookingFormView' %}"><i class="fas fa-arrow-alt-circle-left">Home</i></a>
+
+    <div >
+        <h1>ABOUT MARINA HOTEL:</h1>
+        <h3>Enabling authentic indigenous experiences in harmony with environment & society</h3>
+
+        <p> Marina Hotel is an archetype of the culture and ethos of the region that it is located in. The concept of each of the hotels weaves in the strongest elements of the culture of the region – harking back through architecture, interiors, art and artefacts to the major dynasties who have ruled India.</p>
+        <p>The unique value propositions, including the differentiated character of hotels, coupled with indigenous experiences is what makes MARINA Hotel unique.</p>
+        <p>India’s centuries-rooted sacred relationship with its environment, of sustenance and nurture, is a vital and living heritage that is the cornerstone of the MARINA Hotel ethos and an affirmation of Responsible Luxury: luxury without compromising the earth and sustainability without compromising luxury. </p>
+        <p>Responsible Luxury is the effective combination of luxury and responsible practices (enriching society and the environment) so that the luxury experiences delivered at MARINA Hotel do not in any way burden the environment or the society around us. In fact, it is aimed at creating a positive impact on both the community-at-large and the environment.</p>
+        <p>It ensures that sustainable practices are built into our hotels in the design phase itself, thus enabling MARINA Hotels to be eco-embedded, services to be eco-easy and our associates to be eco-sensitised; all of this while ensuring you indulge guilt-free.MARINA Hotel is LEED Platinum certified. </p>
+        <p>Welcome to planet positive luxury experiences by MARINA Hotel.</p>
+    </div>
+    <div id="img" >
+        <img src="https://www.itchotels.com/content/dam/itchotels/in/umbrella/itc/hotels/itcgrandgoa-goa/images/wellbeing-landing-page/headmast-mobile/wellbeing.png" >
+
+    </div>
+</body>
+</html>

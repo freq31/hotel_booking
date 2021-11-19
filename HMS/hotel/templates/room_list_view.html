@@ -1,16 +1,14 @@
+{% extends "layout.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROOM LIST</title>
+{% block title%}
+    ROOM LIST
+{% endblock %}
+{% block links %}
     <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="{% static 'hotel/css/room_list.css' %}">
-</head>
-<body style="background-image:linear-gradient(yellow,red);background-repeat:no-repeat;">
-    <div class="home">
+{% endblock %}
+{% block content%}
+      <div class="home">
         <a href="{% url 'hotel:BookingFormView' %}"><i class="fas fa-arrow-alt-circle-left">Home</i></a>
     </div>
 
@@ -73,6 +71,4 @@
 
 
     </div>
-</body>
-
-</html>
+{% endblock %}

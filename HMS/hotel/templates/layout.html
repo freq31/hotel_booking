@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title%}  {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'hotel/css/header.css' %}"/>
+    <link rel="stylesheet" href="{% static 'hotel/css/footer.css' %}"/>
+    {% block links%}  {% endblock %}
+</head>
+<body>
+    {% include "header.html" %}
+    {% block content%}  {% endblock %}
+    {% include "footer.html" %}
+</body>
+</html>

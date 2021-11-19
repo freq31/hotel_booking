@@ -1,20 +1,16 @@
+{% extends "layout.html" %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% block title%}
+    CONTACT US
+{% endblock %}
+{% block links %}
     <script src="https://kit.fontawesome.com/692189991f.js" crossorigin="anonymous"></script>
-    <title>CONTACT US</title>
-    <link rel="stylesheet" href="{% static 'hotel/css/contact_us.css' %}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-
-
-</head>
-<body style="background-image:linear-gradient(blue,purple);background-repeat:no-repeat;" >
-
-    <a href="{% url 'hotel:BookingFormView' %}"><i class="fas fa-arrow-alt-circle-left" >Home</i></a>
+    <link rel="stylesheet" href="{% static 'hotel/css/contact_us.css' %}">
+{% endblock %}
+{% block content%}
+<div>
+      <a href="{% url 'hotel:BookingFormView' %}"><i class="fas fa-arrow-alt-circle-left" >Home</i></a>
 
     <h1><i class="far fa-address-card"></i>CONTACT US@</h1>
     <h3>In case of any queries or reservation requests please reach out to our Guest Contact Centre</h3>
@@ -26,7 +22,14 @@
         <i class="far fa-envelope"></i>
     </a>
     <span>reservations@marinahotels.in</span>
+    </div>
+{% endblock %}
+
+{% load static %}
+<!--<body style="background-image:linear-gradient(blue,purple);background-repeat:no-repeat;" >-->
+
+<!--    -->
 
 
-</body>
-</html>
+<!--</body>-->
+<!--</html>-->

@@ -1,0 +1,41 @@
+.nav {
+  position:relative;
+  width: 100%;
+  z-index: 1;
+  height: 50px;
+  padding: 1.5rem;
+  background-color: (255, 255, 255, 0.1) !important;
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap:wrap;
+}
+.nav nav{
+  position: relative;
+  right: 1.5rem;
+
+}
+
+.nav nav a {
+  text-decoration: none;
+  color: #096bfe;
+  font-weight: 600;
+  margin:0px 30px;
+  margin-top:0;
+  line-height:1.2;
+}
+
+#logo {
+  font-family: "Great Vibes", cursive;
+  flex: 0 1 200px;
+  color: #000;
+  z-index: 1;
+  font-size:1.75rem;
+  font-weight:500;
+  line-height:1.2;
+  margin-top:0;
+  display:inline;
+}
+
+nav a:hover{
+color:red;
+}

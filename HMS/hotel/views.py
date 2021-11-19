@@ -7,7 +7,7 @@ from .forms import AvailabilityForm
 from django.urls import reverse,reverse_lazy
 
 def BookingFormView(request):
-    return render(request, 'booking_form.html')
+    return render(request, 'booking_form.html',{'user':request.user})
 
 
 def RoomListView(request):

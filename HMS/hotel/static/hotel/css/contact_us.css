@@ -1,5 +1,6 @@
-body{
-background-color:white;
+div{
+background-image:linear-gradient(blue,purple);
+background-repeat:no-repeat;
 }
 i{
 font-size: 2rem;

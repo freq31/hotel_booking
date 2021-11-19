@@ -14,43 +14,6 @@ margin:0;
 font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 line-height:1.5;
 }
-.nav {
-  position: absolute;
-  width: 100%;
-  z-index: 1;
-  height: 50px;
-  padding: 1.5rem;
-  background-color: (255, 255, 255, 0.1) !important;
-  box-sizing: border-box;
-  display:flex;
-  flex-wrap:wrap;
-}
-.nav nav{
-  position: absolute;
-  right: 1.5rem;
-
-}
-
-.nav nav a {
-  text-decoration: none;
-  color: #096bfe;
-  font-weight: 600;
-  margin:0px 30px;
-  margin-top:0;
-  line-height:1.2;
-}
-
-#logo {
-  font-family: "Great Vibes", cursive;
-  flex: 0 1 200px;
-  color: #000;
-  z-index: 1;
-  font-size:1.75rem;
-  font-weight:500;
-  line-height:1.2;
-  margin-top:0;
-  display:inline;
-}
 
 .check_availability {
   background-image: url(../img/hotel-1.2.5.png);
@@ -67,7 +30,4 @@ line-height:1.5;
 .heading{
 font-family:auto;
 color:white;
-}
-nav a:hover{
-color:red;
 }

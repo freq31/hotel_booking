@@ -1,0 +1,18 @@
+<div class="nav">
+      <h3 id="logo">Marina</h3>
+      <nav>
+          {%block back%}
+          {% endblock %}
+        <a  href="{% url 'hotel:about_us' %}">ABOUT</a>
+        <a  href="{% url 'hotel:contact_us' %}">CONTACT</a>
+        <a  href="{% url 'hotel:gallery' %}">GALLERY</a>
+        <a  href="{% url 'hotel:RoomListView' %}">BOOK NOW</a>
+        <a  href="{% url 'hotel:BookingListView' %}">MY BOOKINGS</a>
+          {% if user.email %}
+            <a  href="http://127.0.0.1:8000/accounts/logout/">LOGOUT</a>
+          {% else %}
+            <a  href="http://127.0.0.1:8000/accounts/login/">SIGN IN</a>
+            <a  href="http://127.0.0.1:8000/accounts/signup/">SIGN UP</a>
+          {% endif %}
+      </nav>
+</div>
